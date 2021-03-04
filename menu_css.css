@@ -1,84 +1,68 @@
-/**{
-	animation:animatecolor 2s linear infinite;
-}*/
-body{
-}
-/*.container{
+body
+{
 	margin:0px;
 	padding:0px;
-	position:relative;
+	height:100%;
+	width:100%;
+	z-index:-1;
+}
+#container{
+	margin:0px;
+	padding:0px;
+	position:fixed;
 	height:100vh;
 	width:100%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-wrap:wrap;
-	overflow:hidden;
-	animation:animatecolor 2s linear infinite;
-	
-}*/
+	background:red;
+	background-size:5000px 5000px;
+	background-repeat:repeat-y;
+	top:0%;
+	left:0%;
+	animation:animatecolor 15s linear infinite;	
+	opacity:.3;
+}
+
 @keyframes animatecolor{
 	0%
 	{
 		filter:hue-rotate(0deg);
 	}
-	100%
+	50%
 	{
 		filter:hue-rotate(360deg);
+	}	
+	100%
+	{
+		filter:hue-rotate(0deg);
 	}
 }
-/*.container span{
-	margin:0px;
-	padding:0px;
-	display:block;
-	position:relative;
-	height:50px;
-	width:50px;
-	background:blue;
-	border-radius:50%; 
-}
-.container span::before{
-	content:'';
-	position:absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-	background:blue;
-	border-radius:50%;
-	transition:2s;
-	transform:scale(0);
-	box-shadow:	0 0 10px blue,
-					0 0 20px blue,
-					0 0 40px blue,
-					0 0 50px blue,
-					0 0 60px blue,
-					0 0 80px blue;	
-}
-.container span:hover::before{
-	transform:scale(1);
-	transition:0s;
-}*/
 .hhhh{
-	background-color:red;	
+	border:10px solid black;
+	border-radius:10%;
+	background:red;	
+	transition:.5s;
+	filter:hue-rotate(0deg);
 
 }
-.hhhh:hover{
-	transition:.5s;
-					
-}
+
 h1{
-	display:inline;
-	padding:10px;
-	top:15px;
-	width:100%;
-	margin:2px;
-	border-radius:5px 5px;
-	background:white;
+	top:10%;
+	left:43%;	
 	position:fixed;
+	filter:hue-rotate(0deg);
+	opacity:1;
+	position:absolute;
+}
+.hhhh1{		
+	color:black;
+	display:inline;
+	top:0px;
+	left:40%;
+	border-radius:5px;
+	background:white;
 	font-size:70px;
-	text-align:center;
 	z-index:4;
+	position:absolute;
+	filter:hue-rotate(0deg);
 	box-shadow:	0 0 10px red,
 					0 0 20px red,
 					0 0 40px red,
@@ -87,32 +71,69 @@ h1{
 					0 0 80px yellow,
 					0 0 100px yellow,
 					0 0 190px yellow;
+	opacity:1;
 }
 .section_1{
-	text-align:center;
+	position:absolute;
+	top:-220px;
+	left:40%;
 	color:green;
-	margin:19% 0% 0% 0%;
+	margin:20% 0% 0% 0%;
 	font-weight:900;
 	font-size:60px;
 	text-decoration:underline;
+	z-index:1;
 }
 li{
 	list-style-type:none;
+	filter:hue-rotate(0deg);
 }
 .img{
 	 width:100px;
 	 height:100px;
-	 padding-left:50px;
 	 float:left;
+	 filter:hue-rotate(0deg);
+	 z-index:1;
+	 transform-style:preserve-3d;
 }
+#imgchilli{
+	position:absolute;
+	top:350px;
+	left:10%;
+	height:500px;
+	width:600px;
+	transition:1s;
+}
+
 .chilli{
+	position:absolute;
+	top:450px;
+	left:11%;
 	margin:120px 0px 100px 50px;
 	font-weight:900;
 	font-size:38px;
 	float:left;
 	text-align:center;
+	filter:hue-rotate(0deg);
+	z-index:-1;
+}
+#imgchilli:hover{
+	transform:translatex(500px);
+	transition:1s;
+}
+#imgsupreme{
+	position:absolute;
+	top:750px;
+	left:10%;
+	height:500px;
+	width:600px;	
+	transition:1s;
 }
 .supreme{
+	position:absolute;
+	top:800px;
+	left:11%;
+	z-index:-1;
 	margin:120px 200px 100px 70px;
 	font-weight:900;
 	font-size:40px;
@@ -120,7 +141,62 @@ li{
 	float:left;
 	text-align:center;
 }
+#imgsupreme:hover{
+	transform:translatex(500px);
+	transition:1s;
+}
+#imgsurprise{
+	position:absolute;
+	top:350px;
+	left:60%;
+	height:500px;
+	width:600px;	
+	transition:1s;
+}
+.supreme1{
+	position:absolute;
+	top:360px;
+	left:61%;
+	z-index:-1;
+	margin:120px 200px 100px 70px;
+	font-weight:900;
+	font-size:40px;
+	padding-left:10px;
+	float:left;
+	text-align:center;
+}
+#imgsurprise:hover{
+	transform:translatex(-500px);
+	transition:1s;
+}
+#imgwhopper{
+	position:absolute;
+	top:750px;
+	left:60%;
+	height:500px;
+	width:600px;		
+	transition:1s;
+}
+.supreme2{
+	position:absolute;
+	top:800px;
+	left:61%;
+	z-index:-1;
+	margin:120px 200px 100px 70px;
+	font-weight:900;
+	font-size:40px;
+	padding-left:10px;
+	float:left;
+	text-align:center;
+}
+#imgwhopper:hover{
+	transform:translatex(-500px);
+	transition:1s;
+}
 .section_2{
+	position:absolute;
+	top:1200px;
+	left:40%;
 	text-align:center;
 	color:red;
 	margin:200px 0px 100px 0px;
@@ -129,27 +205,101 @@ li{
 	text-decoration:underline;
 	clear:left;
 }
-.chicken{
-	text-align:center;
-	float:left;
-	font-size:40px;
-	font-weight:900;
-	margin:100px 0px 200px 120px;
-}
-.hhhh{
-	border:5px solid white;
-	border-radius:10px;
-	color:white;
-}
-img{
-	width:400px;
-	height:400px;
-	opacity:0.5;
-}
-img:hover{
+#imgchilli1{
+	position:absolute;
+	top:1550px;
+	left:10%;
+	height:500px;
+	width:600px;
 	transition:1s;
-	width:425px;height:425px;
-	cursor:pointer;
-	size:100%;
-	opacity:1;
+}
+
+#imgchilli2{
+	position:absolute;
+	top:1600px;
+	left:12%;
+	margin:120px 0px 100px 50px;
+	font-weight:900;
+	font-size:38px;
+	float:left;
+	text-align:center;
+	filter:hue-rotate(0deg);
+	z-index:-1;
+}
+#imgchilli1:hover{
+	transform:translatex(400px);
+	transition:1s;
+}
+#imgwhopper1{
+	position:absolute;
+	top:2000px;
+	left:10%;
+	height:500px;
+	width:600px;
+	
+}
+#imgwhopper2{
+	position:absolute;
+	top:2050px;
+	left:11%;
+	margin:120px 0px 100px 50px;
+	font-weight:900;
+	font-size:38px;
+	float:left;
+	text-align:center;
+	filter:hue-rotate(0deg);
+	z-index:-1;
+	transition:1s;
+}
+#imgwhopper1:hover{
+	transform:translatex(400px);
+	transition:1s;
+}
+#imgcrispy{
+	position:absolute;
+	top:1550px;
+	left:60%;
+	height:500px;
+	width:600px;
+	transition:1s;
+}
+#imgcrispy1{
+	position:absolute;
+	top:1600px;
+	left:61%;
+	margin:120px 0px 100px 50px;
+	font-weight:900;
+	font-size:38px;
+	float:left;
+	text-align:center;
+	filter:hue-rotate(0deg);
+	z-index:-1;
+}
+#imgcrispy:hover{
+	transform:translatex(-550px);
+	transition:1s;
+}
+#imgtandoori{
+	position:absolute;
+	top:2000px;
+	left:60%;
+	height:500px;
+	width:600px;
+	transition:1s;
+}
+#imgtandoori1{
+	position:absolute;
+	top:2050px;
+	left:62%;
+	margin:120px 0px 100px 50px;
+	font-weight:900;
+	font-size:38px;
+	float:left;
+	text-align:center;
+	filter:hue-rotate(0deg);
+	z-index:-1;
+}
+#imgtandoori:hover{
+	transform:translatex(-550px);
+	transition:1s;
 }
