@@ -1,0 +1,155 @@
+/**{
+	animation:animatecolor 2s linear infinite;
+}*/
+body{
+}
+/*.container{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	height:100vh;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	overflow:hidden;
+	animation:animatecolor 2s linear infinite;
+	
+}*/
+@keyframes animatecolor{
+	0%
+	{
+		filter:hue-rotate(0deg);
+	}
+	100%
+	{
+		filter:hue-rotate(360deg);
+	}
+}
+/*.container span{
+	margin:0px;
+	padding:0px;
+	display:block;
+	position:relative;
+	height:50px;
+	width:50px;
+	background:blue;
+	border-radius:50%; 
+}
+.container span::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:blue;
+	border-radius:50%;
+	transition:2s;
+	transform:scale(0);
+	box-shadow:	0 0 10px blue,
+					0 0 20px blue,
+					0 0 40px blue,
+					0 0 50px blue,
+					0 0 60px blue,
+					0 0 80px blue;	
+}
+.container span:hover::before{
+	transform:scale(1);
+	transition:0s;
+}*/
+.hhhh{
+	background-color:red;	
+
+}
+.hhhh:hover{
+	transition:.5s;
+					
+}
+h1{
+	display:inline;
+	padding:10px;
+	top:15px;
+	width:100%;
+	margin:2px;
+	border-radius:5px 5px;
+	background:white;
+	position:fixed;
+	font-size:70px;
+	text-align:center;
+	z-index:4;
+	box-shadow:	0 0 10px red,
+					0 0 20px red,
+					0 0 40px red,
+					0 0 50px red,
+					0 0 60px yellow,
+					0 0 80px yellow,
+					0 0 100px yellow,
+					0 0 190px yellow;
+}
+.section_1{
+	text-align:center;
+	color:green;
+	margin:19% 0% 0% 0%;
+	font-weight:900;
+	font-size:60px;
+	text-decoration:underline;
+}
+li{
+	list-style-type:none;
+}
+.img{
+	 width:100px;
+	 height:100px;
+	 padding-left:50px;
+	 float:left;
+}
+.chilli{
+	margin:120px 0px 100px 50px;
+	font-weight:900;
+	font-size:38px;
+	float:left;
+	text-align:center;
+}
+.supreme{
+	margin:120px 200px 100px 70px;
+	font-weight:900;
+	font-size:40px;
+	padding-left:10px;
+	float:left;
+	text-align:center;
+}
+.section_2{
+	text-align:center;
+	color:red;
+	margin:200px 0px 100px 0px;
+	font-weight:900;
+	font-size:60px;
+	text-decoration:underline;
+	clear:left;
+}
+.chicken{
+	text-align:center;
+	float:left;
+	font-size:40px;
+	font-weight:900;
+	margin:100px 0px 200px 120px;
+}
+.hhhh{
+	border:5px solid white;
+	border-radius:10px;
+	color:white;
+}
+img{
+	width:400px;
+	height:400px;
+	opacity:0.5;
+}
+img:hover{
+	transition:1s;
+	width:425px;height:425px;
+	cursor:pointer;
+	size:100%;
+	opacity:1;
+}
