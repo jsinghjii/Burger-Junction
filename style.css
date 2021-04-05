@@ -6,19 +6,29 @@
 	min-zoom:90%;
 }
 body {
+	padding:0px;
 	height:100%;
 	width:100%;
-	max-zoom:90%;
 	background-image:url("wall.jpg");
 	background-repeat:no-repeat;
 	background-position:center top;
-	background-size:100% 650px;	
+	background-attachment:;
+	background-size:105% 650px;	
 	background-color:black;
 	font-family: 'Quicksand', sans-serif;
 	margin:0px;
 	/*width:1250px;*/
 }
-
+header{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	top:70px;
+	left:0px;
+	width:100%;
+}
 #aaaa {
 	position:fixed;
 	top:15px;
@@ -185,7 +195,7 @@ a{
 	transition:1s;
 	display:inline-block;
 	padding:25px;	
-	margin:100px 0px 0px 20px;
+	margin:0px 0px 0px 20px;
 	font-weight:900;
 	font-size:25px;
 	border:5px solid white;
@@ -210,7 +220,7 @@ a{
 	transition:1s;
 	display:inline-block;
 	padding:25px;	
-	margin:100px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
 	font-weight:900;
 	font-size:25px;
 	border:5px solid white;
@@ -516,13 +526,18 @@ p{
 					0 0 20px white,
 					0 0 20px white;
 }
+#imgbox{
+	position:relative;
+	display:flex;
+	top:0px;
+	left:0px;
+	justify-content:center;
+}
 .imgbox{
 	position:relative;
 	top:0%;
-	left:30%;
 	height:800px;
 	width:800px;
-
 }
 .imgbox1{
 	position:absolute;
@@ -826,7 +841,13 @@ p{
 .nnnc:hover{
 	opacity:1.0
 }
-
+#MeBox{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	top:0%;
+	left:0%;
+}
 .oooo{
 	padding:20px;
 	display:flex;
@@ -835,7 +856,7 @@ p{
 	align-items:center;
 	position:relative;
 	top:10px;
-	left:30%;
+	left:0;
 	border-radius:5%;
 	height:500px;
 	width:400px;
@@ -863,26 +884,33 @@ p{
 	color:red;
 	margin-left:150px;
 }
+#CBox{
+	display:flex;
+	position:relative;
+	justify-content:center;
+	width:100%;
+	height:580px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
 #pppp{
-	margin-left:10px;
+	margin-right:10px;
 	margin-top:120px;
-	width:49%;
+	width:1200px;
 	height:420px;
-	float:left;
 	background-color:#3c3f42;
 	border-radius:10px 0 0 10px ;
 	box-shadow:0 0 4px white,0 0 4px white,0 0 4px white,0 0 4px white,0 0 4px white,0 0 4px white,0 0 4px white;
 }
 
 #pppa{
-	display:relative;
-	top:0%;
+	position:relative;
+	top:120px;
 	left:0%;
-	margin-top:120px;
-	float:right;
-	padding:5px;
-	width:49%;
-	height:415px;
+	padding:;
+	width:1200px;
+	height:420px;
 	background-color:white;
 	border-radius:0 10px 10px 0;
 	box-shadow:0 0 4px red,0 0 4px red,0 0 4px red,0 0 4px red,0 0 4px red,0 0 4px red,0 0 4px red;
@@ -1009,7 +1037,7 @@ p{
 	clear:both;
 	margin-left:10px;
 	margin-bottom:10px;
-	margin-top:610px;
+	margin-top:50px;
 	text-align:center;
 	height:70px;
 	padding-top:50px;
